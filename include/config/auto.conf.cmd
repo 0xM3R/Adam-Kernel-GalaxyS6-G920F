@@ -10,6 +10,7 @@ deps_config := \
 	drivers/crypto/Kconfig \
 	crypto/async_tx/Kconfig \
 	crypto/Kconfig \
+	security/tz_iccc/Kconfig \
 	security/integrity/evm/Kconfig \
 	security/integrity/ima/Kconfig \
 	security/integrity/Kconfig \
@@ -101,7 +102,6 @@ deps_config := \
 	fs/Kconfig \
 	drivers/soc/qcom/Kconfig \
 	drivers/soc/Kconfig \
-	drivers/secfilter/Kconfig \
 	drivers/ledmatrix/Kconfig \
 	drivers/bts/Kconfig \
 	drivers/trace/Kconfig \
@@ -121,10 +121,11 @@ deps_config := \
 	drivers/fingerprint/Kconfig \
 	drivers/gps/Kconfig \
 	drivers/sensors/Kconfig \
+	drivers/sensorhub/brcm/max_notchfilter/Kconfig \
 	drivers/sensorhub/brcm/Kconfig \
 	drivers/sensorhub/atmel/factory/Kconfig \
 	drivers/sensorhub/atmel/Kconfig \
-	drivers/sensorhub/brcm/max_notchfilter/Kconfig \
+	drivers/sensorhub/stm/max_notchfilter/Kconfig \
 	drivers/sensorhub/stm/factory/Kconfig \
 	drivers/sensorhub/stm/Kconfig \
 	drivers/reset/Kconfig \
@@ -380,6 +381,15 @@ deps_config := \
 	drivers/video/mhl/Kconfig \
 	drivers/video/exynos/decon_7580/panels/Kconfig \
 	drivers/video/exynos/decon_7580/Kconfig \
+	drivers/video/exynos/decon_royce/panels/Kconfig \
+	drivers/video/exynos/decon_royce/vpp/Kconfig \
+	drivers/video/exynos/decon_royce/Kconfig \
+	drivers/video/exynos/decon_dual_dsi/panels/Kconfig \
+	drivers/video/exynos/decon_dual_dsi/vpp/Kconfig \
+	drivers/video/exynos/decon_dual_dsi/Kconfig \
+	drivers/video/exynos/decon_dual_display/panels/Kconfig \
+	drivers/video/exynos/decon_dual_display/vpp/Kconfig \
+	drivers/video/exynos/decon_dual_display/Kconfig \
 	drivers/video/exynos/decon/panels/Kconfig \
 	drivers/video/exynos/decon/vpp/Kconfig \
 	drivers/video/exynos/decon/Kconfig \
@@ -397,6 +407,8 @@ deps_config := \
 	drivers/gpu/arm/t72x/r5p0/platform/Kconfig \
 	drivers/gpu/arm/t72x/r5p0/Kconfig \
 	drivers/gpu/arm/t72x/Kconfig \
+	drivers/gpu/arm/t7xx/r7p0/platform/Kconfig \
+	drivers/gpu/arm/t7xx/r7p0/Kconfig \
 	drivers/gpu/arm/t7xx/r5p0/platform/Kconfig \
 	drivers/gpu/arm/t7xx/r5p0/Kconfig \
 	drivers/gpu/arm/t7xx/Kconfig \
@@ -580,6 +592,8 @@ deps_config := \
 	drivers/input/serio/Kconfig \
 	drivers/input/misc/Kconfig \
 	drivers/input/wacom/Kconfig \
+	drivers/input/touchscreen/melfas_mms400/Kconfig \
+	drivers/input/touchscreen/sec_ts/Kconfig \
 	drivers/input/touchscreen/stm/fts5ad56/Kconfig \
 	drivers/input/touchscreen/stm/Kconfig \
 	drivers/input/touchscreen/synaptics_dsx2/Kconfig \
@@ -771,6 +785,7 @@ deps_config := \
 	drivers/ide/Kconfig \
 	drivers/muic/Kconfig \
 	drivers/staging/samsung/sec_notifier/Kconfig \
+	drivers/misc/tzdev/Kconfig \
 	drivers/misc/samsung/Kconfig \
 	drivers/misc/modem_v1/Kconfig \
 	drivers/misc/mipi-lli/Kconfig \
@@ -881,6 +896,7 @@ deps_config := \
 	net/netfilter/ipvs/Kconfig \
 	net/netfilter/ipset/Kconfig \
 	net/netfilter/Kconfig \
+	net/mptcp/Kconfig \
 	net/netlabel/Kconfig \
 	net/ipv6/Kconfig \
 	net/ipv4/Kconfig \
